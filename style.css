@@ -145,7 +145,7 @@ p[data-width="wide"] {
 
 /* Button */
 
-button {
+.button {
 	display: inline-flex;
 	border-radius: 100vmax;
 	padding: 1em 2em;
@@ -241,12 +241,31 @@ button {
 		cursor: pointer;
 		background: transparent;
 		border: 0;
-		padding: 0;
 		box-shadow: none;
 	}
 
 	.mobile-nav-toggle .icon-close {
 		display: none;
+	}
+}
+
+/* Call-to-action */
+
+.cta {
+	background-image: url("./images/bg-simplify-section-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+	text-align: center;
+}
+
+@media (min-width: 50em) {
+	.cta {
+		background-image: url("./images/bg-simplify-section-desktop.svg");
+		background-position-x: 250px;
+		background-size: cover;
+		background-position-y: bottom;
+		text-align: left;
 	}
 }
 
@@ -289,6 +308,20 @@ button {
 	.even-columns {
 		grid-auto-flow: column;
 		grid-auto-columns: 1fr;
+	}
+}
+
+.vertical-align-center {
+	align-items: center;
+}
+
+.justify-self-end {
+	justify-self: end;
+}
+
+@media (min-width: 50em) {
+	.md-justify-self-end {
+		justify-self: end;
 	}
 }
 
