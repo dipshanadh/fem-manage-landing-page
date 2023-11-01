@@ -96,6 +96,7 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -473,6 +474,43 @@ p[data-width="wide"] {
 
   .numbered-items div::after {
     display: none;
+  }
+}
+
+/* Hero blob */
+.hero {
+  position: relative;
+}
+
+.hero__blob {
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  z-index: -1;
+}
+
+@media (max-width: 50em) {
+  .hero__blob {
+    right: -20%;
+    top: -10%;
+  }
+}
+
+.whats-different {
+  position: relative;
+}
+
+.whats-different__blob {
+  position: absolute;
+  bottom: -70%;
+  left: -30%;
+  z-index: -1;
+}
+
+@media (max-width: 50em) {
+  .whats-different__blob {
+    left: 50%;
+    top: -40%;
   }
 }
 
